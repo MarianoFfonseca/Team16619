@@ -11,6 +11,9 @@ import Model3 from "../assets/Model3.png";
 import Model4 from "../assets/Model4.png";
 import Model5 from "../assets/Model5.png";
 import Model6 from "../assets/Model6.png";
+import Model7 from "../assets/Model7.png";
+import Model8 from "../assets/Model8.png";
+import Model9 from "../assets/Model9.png";
 import { motion } from "framer-motion";
 
 function DifferentDetails({ openDetail }) {
@@ -47,7 +50,7 @@ function DifferentDetails({ openDetail }) {
       </>
     );
   }
-  if (openDetail.title === "The Model") {
+  if (openDetail.title === "Our Model") {
     return (
       <>
         <h1 className="text-5xl font-bold mt-32">{openDetail.title}</h1>
@@ -124,6 +127,27 @@ function DifferentDetails({ openDetail }) {
           shows how the costs differ both at the beginning and over time.
         </p>{" "}
         <img src={Model6} className="mx-4 max-w-[800px] my-6" alt="" />
+        <div className="h-[0.5px] mt-12 bg-black w-full"></div>
+        <h1
+          className="text-2xl font-semibold mt-12
+ "
+        >
+          Model 3
+        </h1>
+        <img src={Model7} className="mx-4 max-w-[800px] my-6" alt="" />
+        <img src={Model8} className="mx-4 max-w-[800px] my-6" alt="" />
+        <p className="text-xl">
+          25 mpg avg with the idea of just 10% of car trips under 2 miles which
+          is assumed to be nearly 5 million cars off of the roads then there is
+          approximately 2.3 billions gallons saved per year
+        </p>
+        <img src={Model9} className="mx-4 max-w-[800px] my-6" alt="" />
+        <p className="text-xl">
+          On average a car emits about 4.6 metric tons of carbon emissions per
+          year. Taking out 5 million cars would lead to about 23 million metric
+          tons of carbon emissions that would not be put into the environment
+          each year.
+        </p>
       </>
     );
   }

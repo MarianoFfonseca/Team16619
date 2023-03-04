@@ -6,7 +6,7 @@ import MenuPart from "./components/MenuPart";
 import DetailPart from "./components/DetailPart";
 import LoadingScene from "./components/LoadingScene";
 function App() {
-  let delay = 1.2;
+  let delay = 1.5;
   function handleDelay() {
     delay = delay + 0.2;
     return delay;
@@ -14,9 +14,18 @@ function App() {
   const [openDetail, setopenDetail] = useState(null);
   return (
     <div className="App relative overflow-x-hidden">
-      <div className="fixed grid justify-center justify-items-center content-center z-30 top-0 left-0 right-0 ">
+      <motion.div
+        initial={{ y: -200 }}
+        animate={{ y: 0 }}
+        transition={{
+          duration: 1.5,
+          ease: "easeOut",
+          delay: 3.2,
+        }}
+        className="fixed grid justify-center justify-items-center content-center z-30 top-0 left-0 right-0 "
+      >
         <div className="px-6 py-2 bg-white rounded-b-md">Team # 16619</div>{" "}
-      </div>
+      </motion.div>
       <AnimatePresence>
         {/* App loader  */}
         <MenuPart
