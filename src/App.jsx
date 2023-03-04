@@ -20,7 +20,7 @@ function App() {
         transition={{
           duration: 1.5,
           ease: "easeOut",
-          delay: 3,
+          delay: 2.5,
         }}
         className="fixed grid justify-center justify-items-center content-center z-30 top-0 left-0 right-0 "
       >
