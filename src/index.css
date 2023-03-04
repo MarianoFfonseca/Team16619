@@ -16,6 +16,7 @@
 body {
   overflow: hidden; /* Hide scrollbars */
 }
+
 * {
   box-sizing: border-box;
 }
